@@ -12,7 +12,6 @@ buildNumber.properties
 
 # From HAPI
 *.orig
-target/
 *.iml
 
 # Compiled class file
