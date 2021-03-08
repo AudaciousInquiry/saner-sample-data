@@ -1,0 +1,2314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle>
+    <type value="collection"/>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="234"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="23"/>
+                </extension>
+                <status value="active"/>
+                <name value="NORTHSHORE UNIVERSITY HEALTH SYSTEM SKOKIE HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="9600 GROSS POINT ROAD"/>
+                    <city value="SKOKIE"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60076"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.7407096109999"/>
+                    <latitude value="42.056416062"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="114"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="11"/>
+                </extension>
+                <status value="active"/>
+                <name value="RUSH OAK PARK HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="520 S MAPLE AVE"/>
+                    <city value="OAK PARK"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60304"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.803351533"/>
+                    <latitude value="41.878618014"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="187"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="18"/>
+                </extension>
+                <status value="active"/>
+                <name value="ADVENTIST MIDWEST HEALTH DBA ADVENTIST LA GRANGE MEMORIAL HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="5101 S WILLOW SPRINGS RD"/>
+                    <city value="LA GRANGE"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60525"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.886394926"/>
+                    <latitude value="41.7970605520001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="255"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="25"/>
+                </extension>
+                <status value="active"/>
+                <name value="GOTTLEB MEMORIAL HOSPITAL LOYOLA HEALTH SYSTEM AT GOTTLIEB"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="701 WEST NORTH AVE"/>
+                    <city value="MELROSE PARK"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60160"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.842815074"/>
+                    <latitude value="41.910529781"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="176"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="17"/>
+                </extension>
+                <status value="active"/>
+                <name value="LORETTO HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="645 SOUTH CENTRAL AVE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60644"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.76408865"/>
+                    <latitude value="41.8721245730001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="577"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="57"/>
+                </extension>
+                <status value="active"/>
+                <name value="THE UNIVERSITY OF CHICAGO MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="5841 SOUTH MARYLAND"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60637"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.604337126"/>
+                    <latitude value="41.788746851"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="134"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="13"/>
+                </extension>
+                <status value="active"/>
+                <name value="THOREK MEMORIAL HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="850 W IRVING PARK RD"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60613"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.6516212399999"/>
+                    <latitude value="41.9551890160001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="460"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="46"/>
+                </extension>
+                <status value="active"/>
+                <name value="JOHN H STROGER JR HOSPITAL"/>
+                <description value="GOVERNMENT - LOCAL HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="1901 W HARRISON ST"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60612"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.674398458"/>
+                    <latitude value="41.8723348670001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="421"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="42"/>
+                </extension>
+                <status value="active"/>
+                <name value="MERCY HOSPITAL AND MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2525 S MICHIGAN AVE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60616"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.621491598"/>
+                    <latitude value="41.8468895830001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="288"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="28"/>
+                </extension>
+                <status value="active"/>
+                <name value="LITTLE COMPANY OF MARY HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2800 W 95TH ST"/>
+                    <city value="EVERGREEN PARK"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60805"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.693028878"/>
+                    <latitude value="41.721464999"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="330"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="33"/>
+                </extension>
+                <status value="active"/>
+                <name value="ADVOCATE NORTHSIDE HEALTH NETWORK DBA ILLINOIS MASONIC MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="836 WEST WELLINGTON AVENUE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60657"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.651371663"/>
+                    <latitude value="41.9367408480001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="189"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="18"/>
+                </extension>
+                <status value="active"/>
+                <name value="METHODIST HOSPITAL OF CHICAGO"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="5025 N PAULINA STREET"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60640"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.670743057"/>
+                    <latitude value="41.973086773"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="684"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="68"/>
+                </extension>
+                <status value="active"/>
+                <name value="ADVOCATE CHRIST HOSPITAL &amp; MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="4440 W 95TH STREET"/>
+                    <city value="OAK LAWN"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60453"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.732442245"/>
+                    <latitude value="41.7216945170001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="624"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="62"/>
+                </extension>
+                <status value="active"/>
+                <name value="LUTHERAN GENERAL HOSPITAL ADVOCATE"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="1775 DEMPSTER ST"/>
+                    <city value="PARK RIDGE"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60068"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.847334384"/>
+                    <latitude value="42.038802226"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="386"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="38"/>
+                </extension>
+                <status value="active"/>
+                <name value="NORTHWEST COMMUNITY HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="800 W CENTRAL ROAD"/>
+                    <city value="ARLINGTON HEIGHTS"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60005"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.992181634"/>
+                    <latitude value="42.0682911060001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="370"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="37"/>
+                </extension>
+                <status value="active"/>
+                <name value="ALEXIAN BROTHERS MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="800 W BIESTERFIELD RD"/>
+                    <city value="ELK GROVE VILLAGE"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60007"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-88.0168922779999"/>
+                    <latitude value="42.0046568230001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="885"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="88"/>
+                </extension>
+                <status value="active"/>
+                <name value="NORTHWESTERN MEMORIAL HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="251 E HURON ST"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60611"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.621024366"/>
+                    <latitude value="41.894607713"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="305"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="30"/>
+                </extension>
+                <status value="active"/>
+                <name value="ST ALEXIUS MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="1555 N BARRINGTON RD"/>
+                    <city value="HOFFMAN ESTATES"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60169"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-88.1410342249999"/>
+                    <latitude value="42.052928459"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="25"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="2"/>
+                </extension>
+                <status value="active"/>
+                <name value="PROVIDENT HOSPITAL OF COOK COUNTY"/>
+                <description value="GOVERNMENT - LOCAL HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="500 E 51ST ST"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60615"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.613323872"/>
+                    <latitude value="41.8026750130001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="180"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="18"/>
+                </extension>
+                <status value="active"/>
+                <name value="BLUE ISLAND HOSPITAL CO LLC DBA METROSOUTH MEDICAL CENTER"/>
+                <description value="PROPRIETARY HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="12935 S GREGORY"/>
+                    <city value="BLUE ISLAND"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60406"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.677830286"/>
+                    <latitude value="41.6581141940001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="493"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="49"/>
+                </extension>
+                <status value="active"/>
+                <name
+                    value="PRESENCE CHICAGO HOSPITALS NETWORK DBA PRESENCE SAINT MARY OF NAZARETH HOSPITAL&#xA;            CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2233 WEST DIVISION STREET"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60622"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.683276587"/>
+                    <latitude value="41.9025326080001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="188"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="18"/>
+                </extension>
+                <status value="active"/>
+                <name value="ADVOCATE TRINITY HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2320 E 93RD ST"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60617"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.567226181"/>
+                    <latitude value="41.726504393"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="118"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="11"/>
+                </extension>
+                <status value="active"/>
+                <name
+                    value="PRESANCE CHICAGO HOSPITALS NETWORK DBA PRESENCE HOLY FAMILY MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="100 NORTH RIVER ROAD"/>
+                    <city value="DES PLAINES"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60016"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.890037611"/>
+                    <latitude value="42.055597107"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="172"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="17"/>
+                </extension>
+                <status value="active"/>
+                <name value="WEST SUBURBAN MEDICAL CENTER"/>
+                <description value="PROPRIETARY HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="3 ERIE COURT"/>
+                    <city value="OAK PARK"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60302"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.776179564"/>
+                    <latitude value="41.8914014040001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="240"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="24"/>
+                </extension>
+                <status value="active"/>
+                <name value="JESSE BROWN VA MEDICAL CENTER - VA CHICAGO HEALTHCARE SYSTEM"/>
+                <description value="GOVERNMENT - FEDERAL HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="820 S DAMEN STREET"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60612"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.6770414819999"/>
+                    <latitude value="41.870737816"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="377"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="37"/>
+                </extension>
+                <status value="active"/>
+                <name value="PALOS COMMUNITY HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="12251 SOUTH 80TH AVENUE"/>
+                    <city value="PALOS HEIGHTS"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60464"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.813443996"/>
+                    <latitude value="41.6692109270001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="115"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="11"/>
+                </extension>
+                <status value="active"/>
+                <name value="ROSELAND COMMUNITY HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="45 W 111TH STREET"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60628"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.626009757"/>
+                    <latitude value="41.692299414"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="100"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="10"/>
+                </extension>
+                <status value="active"/>
+                <name value="ST BERNARD HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="326 W 64TH ST"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60621"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.6336013389999"/>
+                    <latitude value="41.778394561"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="690"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="69"/>
+                </extension>
+                <status value="active"/>
+                <name value="NORTHSHORE UNIVERSITY HEALTHSYSTEM DBA EVANSTON HOSPITAL"/>
+                <description value="NOT AVAILABLE HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2650 RIDGE AVENUE"/>
+                    <city value="EVANSTON"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60201"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.6847127729999"/>
+                    <latitude value="42.065533499"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="371"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="37"/>
+                </extension>
+                <status value="active"/>
+                <name value="GOTTLEB CO HEALTH SERVICES CORPORATION DBA MACNEAL HOSPITAL"/>
+                <description value="PROPRIETARY HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="3249 SOUTH OAK PARK AVENUE"/>
+                    <city value="BERWYN"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60402"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.792156701"/>
+                    <latitude value="41.8319833210001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="279"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="27"/>
+                </extension>
+                <status value="active"/>
+                <name value="COMMUNITY FIRST HEALTHCARE OF ILLINOIS DBA MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="5645 W ADDISON"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60634"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.7678359129999"/>
+                    <latitude value="41.945445508"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="279"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="27"/>
+                </extension>
+                <status value="active"/>
+                <name value="SWEDISH COVENANT HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="5145 N CALIFORNIA AVE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60625"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.69946587"/>
+                    <latitude value="41.975351554"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="151"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="15"/>
+                </extension>
+                <status value="active"/>
+                <name value="ST ANTHONY HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2875 WEST 19TH STREET"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60623"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.698276963"/>
+                    <latitude value="41.855214534"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="402"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="40"/>
+                </extension>
+                <status value="active"/>
+                <name value="RESURRECTION MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="7435 W TALCOTT AVENUE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60631"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.8135458199999"/>
+                    <latitude value="41.987500292"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="160"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="16"/>
+                </extension>
+                <status value="active"/>
+                <name value="HOLY CROSS HOSPITAL"/>
+                <description value="PROPRIETARY HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2701 W 68TH STREET"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60629"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.6923803299999"/>
+                    <latitude value="41.769406691"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="669"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="66"/>
+                </extension>
+                <status value="active"/>
+                <name value="RUSH UNIVERSITY MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="1653 WEST CONGRESS PARKWAY"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60612"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.668909819"/>
+                    <latitude value="41.8745718600001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="260"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="26"/>
+                </extension>
+                <status value="active"/>
+                <name value="JACKSON PARK HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="7531 S STONY ISLAND AVE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60649"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.585235064"/>
+                    <latitude value="41.757730612"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="137"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="13"/>
+                </extension>
+                <status value="active"/>
+                <name value="SOUTH SHORE HOSPITAL XXX"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="8012 SOUTH CRANDON AVENUE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60617"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.5689968789999"/>
+                    <latitude value="41.749327394"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="155"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="15"/>
+                </extension>
+                <status value="active"/>
+                <name value="NORWEGIAN-AMERICAN HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="1044 N FRANCISCO AVE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60622"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.699095477"/>
+                    <latitude value="41.9007998380001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="240"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="24"/>
+                </extension>
+                <status value="active"/>
+                <name value="ADVOCATE SOUTH SUBURBAN HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="17800 S KEDZIE AVE"/>
+                    <city value="HAZEL CREST"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60429"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.697569734"/>
+                    <latitude value="41.5663040370001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="148"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="14"/>
+                </extension>
+                <status value="active"/>
+                <name value="OAK FOREST HOSPITAL"/>
+                <description value="GOVERNMENT - LOCAL HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="159TH &amp; CICERO AVENUE"/>
+                    <city value="OAK FOREST"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60452"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.734103277"/>
+                    <latitude value="41.5996573990001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="483"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="48"/>
+                </extension>
+                <status value="active"/>
+                <name value="UNIVERSITY OF ILLINOIS HOSPITAL"/>
+                <description value="GOVERNMENT - STATE HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="1740 WEST TAYLOR ST, SUITE 1400"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60612"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.6705153729999"/>
+                    <latitude value="41.869668774"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="119"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="11"/>
+                </extension>
+                <status value="active"/>
+                <name value="SACRED HEART HOSPITAL"/>
+                <description value="PROPRIETARY HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="3240 W FRANKLIN BLVD"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60624"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.707878469"/>
+                    <latitude value="41.890621514"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="493"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="49"/>
+                </extension>
+                <status value="active"/>
+                <name
+                    value="PRESENCE CHICAGO HOSPITALS NETWORK DBA PRESENCE SAINT ELIZABETH HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="1431 N. CLAREMONT AVENUE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60622"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.6863100959999"/>
+                    <latitude value="41.9075855830001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="184"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="18"/>
+                </extension>
+                <status value="active"/>
+                <name value="PIPELINE WESS MEMORIAL HOSPITAL DBA LOUIS A WEISS MEMORIAL HOSPITAL"/>
+                <description value="PROPRIETARY HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="4646 N MARINE DRIVE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60640"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.6496268079999"/>
+                    <latitude value="41.966468354"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="87"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="8"/>
+                </extension>
+                <status value="active"/>
+                <name value="RML HEALTH PROVIDERS LTD PARTNERSHIP - DBA RML HINSDALE"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="5601 SOUTH COUNTY LINE ROAD"/>
+                    <city value="HINSDALE"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60521"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.915307613"/>
+                    <latitude value="41.786185319"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="54"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="5"/>
+                </extension>
+                <status value="active"/>
+                <name value="KINDRED HOSPITAL - CENTRAL CHICAGO"/>
+                <description value="PROPRIETARY HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="4058 WEST MELROSE STREET"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60641"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.728643694"/>
+                    <latitude value="41.9402465750001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="450"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="45"/>
+                </extension>
+                <status value="active"/>
+                <name value="EDWARD HINES JR. VETERANS AFFAIRS HOSPITAL"/>
+                <description value="GOVERNMENT - FEDERAL HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="5000 SOUTH FIFTH AVENUE"/>
+                    <city value="HINES"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60141"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.8412959139999"/>
+                    <latitude value="41.861098601"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="485"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="48"/>
+                </extension>
+                <status value="active"/>
+                <name value="FOSTER G MCGAW HOSPITAL LOYOLA UNIVERSITY MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2160 S 1ST AVENUE"/>
+                    <city value="MAYWOOD"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60141"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.8347220859999"/>
+                    <latitude value="41.8606827780001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="244"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="24"/>
+                </extension>
+                <status value="active"/>
+                <name value="PRESENCE CHICAGO HOSPITALS NETWORK DBA PRESENCE SAINT FRANCIS HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="355 RIDGE AVE"/>
+                    <city value="EVANSTON"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60202"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.684568052"/>
+                    <latitude value="42.0243893370001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="290"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="29"/>
+                </extension>
+                <status value="active"/>
+                <name value="MT SINAI HOSPITAL MEDICAL CENTER"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="15TH STREET AT CALIFORNIA"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60608"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.694338583"/>
+                    <latitude value="41.8608097260001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="-999"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="-99.9"/>
+                </extension>
+                <status value="active"/>
+                <name value="NORTHSHORE HEALTHSYSTEM DBA GLENBROOK HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2100 PFINGSTEN ROAD"/>
+                    <city value="GLENVIEW"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60026"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.852721333"/>
+                    <latitude value="42.092538491"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="288"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="28"/>
+                </extension>
+                <status value="active"/>
+                <name value="ANN &amp; ROBERT H LURIE CHILDREN'S HOSPITAL OF CHICAGO"/>
+                <description value="NOT AVAILABLE HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622310"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay
+                            value="CHILDREN'S HOSPITALS, SPECIALTY (EXCEPT PSYCHIATRIC, SUBSTANCE&#xA;            ABUSE)"
+                        />
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="225 EAST CHICAGO AVENUE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60611"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.621718517"/>
+                    <latitude value="41.8964504790001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="88"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="8"/>
+                </extension>
+                <status value="active"/>
+                <name value="GARFIELD PARK HOSPITAL, LLC"/>
+                <description value="NOT AVAILABLE HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="520 NORTH RIDGEWAY AVENUE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60624"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.720182834"/>
+                    <latitude value="41.890711857"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="337"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="33"/>
+                </extension>
+                <status value="active"/>
+                <name
+                    value="PRESENCE CHICAGO HOSPITALS NETWORK DBA PRESENCE RESURRECTION MEDICAL CENTER"/>
+                <description value="NOT AVAILABLE HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="7435 WEST TALCOTT AVENUE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60631"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.813565535"/>
+                    <latitude value="41.9875391960001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="68"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="6"/>
+                </extension>
+                <status value="active"/>
+                <name value="RML HEALTH PROVIDERS LIMITED PARTNERSHIP - DBA RML CHICAGO"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="3435 WEST VAN BUREN STREET"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60624"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.712272054"/>
+                    <latitude value="41.8749448930001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="36"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="3"/>
+                </extension>
+                <status value="active"/>
+                <name value="SHRINERS HOSPITAL FOR CHILDREN - CHICAGO"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="CHILDREN'S HOSPITALS, GENERAL"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2211 NORTH OAK PARK AVENUE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60707"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.793422515"/>
+                    <latitude value="41.9198380380001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="94"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="9"/>
+                </extension>
+                <status value="active"/>
+                <name value="KINDRED HOSPITAL - CHICAGO"/>
+                <description value="PROPRIETARY HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="365 EAST NORTH AVENUE"/>
+                    <city value="NORTHLAKE"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60164"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.8905897719999"/>
+                    <latitude value="41.9069037900001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="49"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="4"/>
+                </extension>
+                <status value="active"/>
+                <name value="LARABIDA CHILDREN'S HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value=""/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="CHILDREN'S HOSPITALS, GENERAL"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="6501 S PROMONTORY DR"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60649"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.5713124339999"/>
+                    <latitude value="41.777293335"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="398"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="39"/>
+                </extension>
+                <status value="active"/>
+                <name value="FRANCISCAN ALLIANCE INC FRANCISCAN HEALTH-OLYMPIA FALLS"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="20201 S CRAWFORD AVENUE"/>
+                    <city value="OLYMPIA FIELDS"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60461"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.711350169"/>
+                    <latitude value="41.52310929"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="344"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="34"/>
+                </extension>
+                <status value="active"/>
+                <name value="INGALLS MEMORIAL HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="ONE INGALLS DRIVE"/>
+                    <city value="HARVEY"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60426"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.65941817"/>
+                    <latitude value="41.607379973"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="181"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="18"/>
+                </extension>
+                <status value="active"/>
+                <name value="PIPELINE WESTLAKE HOSPITAL LLC DBA WESTLAKE COMMUNITY HOSPITAL"/>
+                <description value="PROPRIETARY HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="1225 LAKE ST"/>
+                    <city value="MELROSE PARK"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60160"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.848494976"/>
+                    <latitude value="41.8929601150001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="-999"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="-99.9"/>
+                </extension>
+                <status value="active"/>
+                <name value="KINDRED HOSPITAL - CHICAGO"/>
+                <description value="NOT AVAILABLE HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2544 W. MONTROSE AVENUE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60618"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.693297179"/>
+                    <latitude value="41.9615025800001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Location xmlns="http://hl7.org/fhir">
+                <extension url="http://test.sanerproject.org/beds">
+                    <valueInteger value="500"/>
+                </extension>
+                <extension url="http://test.sanerproject.org/icubeds">
+                    <valueInteger value="50"/>
+                </extension>
+                <status value="active"/>
+                <name value="PRESENCE SAINT JOSEPH HOSPITAL"/>
+                <description value="NON-PROFIT HOSPITAL"/>
+                <mode value="instance"/>
+                <type>
+                    <coding>
+                        <code value="622110"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/naics"/>
+                        <dispay value="GENERAL MEDICAL AND SURGICAL HOSPITALS"/>
+                    </coding>
+                </type>
+                <address>
+                    <type value="both"/>
+                    <line value="2900 NORTH LAKE SHORE DRIVE"/>
+                    <city value="CHICAGO"/>
+                    <district value="COOK"/>
+                    <state value="IL"/>
+                    <postalCode value="60657"/>
+                    <country value="USA"/>
+                </address>
+                <position>
+                    <longitude value="-87.637069094"/>
+                    <latitude value="41.9338207050001"/>
+                </position>
+            </Location>
+        </resource>
+    </entry>
+</Bundle>
