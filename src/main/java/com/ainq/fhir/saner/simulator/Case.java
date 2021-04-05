@@ -34,8 +34,6 @@ public class Case {
     private Date startDate, endDate, icuStart, icuEnd;
     private Patient patient;
     private Encounter encounter;
-    private List<Resource> data;
-
     private static String generateIdentifier() {
         return USE_UUID ? UUID.randomUUID().toString() : Integer.toString(++caseCount);
     }
@@ -237,57 +235,58 @@ public class Case {
         int errors = 0;
         boolean wasReset = false;
         do {
-            double variate = Math.random();
-            variate = rankAndSet(variate, 0.654, "2106-3", this::addRace);   // White
-            variate = rankAndSet(variate, 0.238, "2054-5", this::addRace);   // Black or African American
-            variate = rankAndSet(variate, 0.007, "1002-5", this::addRace);   // American Indian or Alaska Native
-            variate = rankAndSet(variate, 0.079, "2028-9", this::addRace);   // Asian
-            variate = rankAndSet(variate, 0.001, "2076-8", this::addRace);   // Native Hawaiian or Other Pacific Islander
-            if (getRace().size() == 0) {
-                // Multiple races for the remainder.
-                while (getRace().size() <  2) {
-                    variate = Math.random();
-                    variate = rankAndSet(variate, 0.654, "2106-3", this::addRace);   // White
-                    variate = rankAndSet(variate, 0.238, "2054-5", this::addRace);   // Black or African American
-                    variate = rankAndSet(variate, 0.007, "1002-5", this::addRace);   // American Indian or Alaska Native
-                    variate = rankAndSet(variate, 0.079, "2028-9", this::addRace);   // Asian
-                    variate = rankAndSet(variate, 0.001, "2076-8", this::addRace);   // Native Hawaiian or Other Pacific Islander
-                }
-            }
-
-            variate = Math.random();
-            variate = rankAndSet(variate, 0.256, "2135-2", this::setEthnicity);   // Hispanic
-            variate = rankAndSet(variate, 0.744, "2186-5", this::setEthnicity);   // Non-Hispanic
-
-            variate = Math.random();
-            variate = rankAndSet(variate, 0.060, (int) (Math.random() * 5) + 0, this::setAge);
-            variate = rankAndSet(variate, 0.057, (int) (Math.random() * 5) + 5, this::setAge);
-            variate = rankAndSet(variate, 0.063, (int) (Math.random() * 5) + 10, this::setAge);
-            variate = rankAndSet(variate, 0.060, (int) (Math.random() * 5) + 15, this::setAge);
-            variate = rankAndSet(variate, 0.063, (int) (Math.random() * 5) + 20, this::setAge);
-            variate = rankAndSet(variate, 0.163, (int) (Math.random() * 10) + 25, this::setAge);
-            variate = rankAndSet(variate, 0.136, (int) (Math.random() * 10) + 35, this::setAge);
-            variate = rankAndSet(variate, 0.124, (int) (Math.random() * 10) + 45, this::setAge);
-            variate = rankAndSet(variate, 0.062, (int) (Math.random() * 5) + 55, this::setAge);
-            variate = rankAndSet(variate, 0.061, (int) (Math.random() * 5) + 60, this::setAge);
-            variate = rankAndSet(variate, 0.087, (int) (Math.random() * 10) + 65, this::setAge);
-            variate = rankAndSet(variate, 0.045, (int) (Math.random() * 10) + 75, this::setAge);
-            variate = rankAndSet(variate, 0.020, (int) (Math.random() * 15) + 85, this::setAge);
-
-            setGender(Math.random() < 0.479 ? "male" : "female");
-
+//            double variate = Generator.RANDOM.nextDouble();
+//            variate = rankAndSet(variate, 0.654, "2106-3", this::addRace);   // White
+//            variate = rankAndSet(variate, 0.238, "2054-5", this::addRace);   // Black or African American
+//            variate = rankAndSet(variate, 0.007, "1002-5", this::addRace);   // American Indian or Alaska Native
+//            variate = rankAndSet(variate, 0.079, "2028-9", this::addRace);   // Asian
+//            variate = rankAndSet(variate, 0.001, "2076-8", this::addRace);   // Native Hawaiian or Other Pacific Islander
+//            if (getRace().size() == 0) {
+//                // Multiple races for the remainder.
+//                while (getRace().size() <  2) {
+//                    variate = Generator.RANDOM.nextDouble();
+//                    variate = rankAndSet(variate, 0.654, "2106-3", this::addRace);   // White
+//                    variate = rankAndSet(variate, 0.238, "2054-5", this::addRace);   // Black or African American
+//                    variate = rankAndSet(variate, 0.007, "1002-5", this::addRace);   // American Indian or Alaska Native
+//                    variate = rankAndSet(variate, 0.079, "2028-9", this::addRace);   // Asian
+//                    variate = rankAndSet(variate, 0.001, "2076-8", this::addRace);   // Native Hawaiian or Other Pacific Islander
+//                }
+//            }
+//
+//            variate = Generator.RANDOM.nextDouble();
+//            variate = rankAndSet(variate, 0.256, "2135-2", this::setEthnicity);   // Hispanic
+//            variate = rankAndSet(variate, 0.744, "2186-5", this::setEthnicity);   // Non-Hispanic
+//
+//            variate = Generator.RANDOM.nextDouble();
+//            double ageRange = Generator.RANDOM.nextDouble();
+//            variate = rankAndSet(variate, 0.060, (int) (ageRange * 5) + 0, this::setAge);
+//            variate = rankAndSet(variate, 0.057, (int) (ageRange * 5) + 5, this::setAge);
+//            variate = rankAndSet(variate, 0.063, (int) (ageRange * 5) + 10, this::setAge);
+//            variate = rankAndSet(variate, 0.060, (int) (ageRange * 5) + 15, this::setAge);
+//            variate = rankAndSet(variate, 0.063, (int) (ageRange * 5) + 20, this::setAge);
+//            variate = rankAndSet(variate, 0.163, (int) (ageRange * 10) + 25, this::setAge);
+//            variate = rankAndSet(variate, 0.136, (int) (ageRange * 10) + 35, this::setAge);
+//            variate = rankAndSet(variate, 0.124, (int) (ageRange * 10) + 45, this::setAge);
+//            variate = rankAndSet(variate, 0.062, (int) (ageRange * 5) + 55, this::setAge);
+//            variate = rankAndSet(variate, 0.061, (int) (ageRange * 5) + 60, this::setAge);
+//            variate = rankAndSet(variate, 0.087, (int) (ageRange * 10) + 65, this::setAge);
+//            variate = rankAndSet(variate, 0.045, (int) (ageRange * 10) + 75, this::setAge);
+//            variate = rankAndSet(variate, 0.020, (int) (ageRange * 15) + 85, this::setAge);
+//
+//            setGender(Generator.RANDOM.nextDouble() < 0.479 ? "male" : "female");
+//
             Map<String, String> properties = new HashMap<>();
-            int count = 0;
-            for (String race: getRace()) {
-                properties.put("race" + count++, race);
-            }
-            properties.put("ethnicity", getEthnicity());
-            properties.put("age", Integer.toString(getAge()));
-            properties.put("gender", getGender());
+//            int count = 0;
+//            for (String race: getRace()) {
+//                properties.put("race" + count++, race);
+//            }
+//            properties.put("ethnicity", getEthnicity());
+//            properties.put("age", Integer.toString(getAge()));
+//            properties.put("gender", getGender());
 
             patient = CaseSimulator.getPatientGenerator().generate(properties);
             if (patient == null) {
-                LOGGER.debug("Error: could not generate patient with {}", properties);
+                LOGGER.warn("Error: could not generate patient with {}", properties);
                 if (++errors > 10) {
                     if (wasReset) {
                         LOGGER.error("Error: could not generate patient after reset with {}", properties);
@@ -296,6 +295,7 @@ public class Case {
                     CaseSimulator.getPatientGenerator().reset();
                     wasReset = true;
                     errors = 0;
+                    LOGGER.warn("Reset Patient Data");
                 }
             }
         } while (patient == null);  // Try another case on failure

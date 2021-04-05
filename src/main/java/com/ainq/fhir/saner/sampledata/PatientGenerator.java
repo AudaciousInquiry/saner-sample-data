@@ -12,6 +12,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 import org.hl7.fhir.r4.model.Coding;
@@ -60,7 +61,7 @@ public class PatientGenerator implements Generator<Patient> {
     @Override
     public Patient generate(Map<String, String> properties) {
         Set<String> matches = patients;
-        boolean fixGender, fixAge, fixRace, fixEthnicity;
+        boolean fixGender = false, fixAge = false, fixRace = false, fixEthnicity = false;
         Set<String> add;
 
         if (properties.containsKey("id")) {
@@ -77,27 +78,38 @@ public class PatientGenerator implements Generator<Patient> {
                 age = properties.get("age"),
                 gender = properties.get("gender");
 
-        add = findMatchingSet("gender", gender, genders, patientsByGender, f -> gender.equals(f));
-        fixGender = add.isEmpty();
-        if (!fixGender) {
-            matches = merge(matches, add);
+        if (gender != null) {
+            add = findMatchingSet("gender", gender, genders, patientsByGender, f -> gender.equals(f));
+            fixGender = add.isEmpty();
+            if (!fixGender) {
+                matches = merge(matches, add);
+            }
         }
-        int ageValue = Integer.parseInt(age);
-        add = findMatchingSet("age", age, ageGroupBounds, patientsByAge, f -> ageValue < f);
-        fixAge = add.isEmpty();
-        if (!fixAge) {
-            matches = merge(matches, add);
+
+        if (age != null) {
+            int ageValue = Integer.parseInt(age);
+            add = findMatchingSet("age", age, ageGroupBounds, patientsByAge, f -> ageValue < f);
+            fixAge = add.isEmpty();
+            if (!fixAge) {
+                matches = merge(matches, add);
+            }
         }
-        add = findMatchingSet("race", race1, raceOrEthnicity, patientsByRaceOrEthnicity, f -> race1.equals(f));
-        fixRace = add.isEmpty();
-        if (!fixRace) {
-            matches = merge(matches, add);
+
+        if (race1 != null) {
+            add = findMatchingSet("race", race1, raceOrEthnicity, patientsByRaceOrEthnicity, f -> race1.equals(f));
+            fixRace = add.isEmpty();
+            if (!fixRace) {
+                matches = merge(matches, add);
+            }
         }
+
         // Ignore race2, we'll set it if necessary.
-        add = findMatchingSet("ethnicity", ethnicity, raceOrEthnicity, patientsByRaceOrEthnicity, f -> ethnicity.equals(f));
-        fixEthnicity = add.isEmpty();
-        if (!fixEthnicity) {
-            matches = merge(matches, add);
+        if (ethnicity != null) {
+            add = findMatchingSet("ethnicity", ethnicity, raceOrEthnicity, patientsByRaceOrEthnicity, f -> ethnicity.equals(f));
+            fixEthnicity = add.isEmpty();
+            if (!fixEthnicity) {
+                matches = merge(matches, add);
+            }
         }
 
         if (matches.isEmpty()) {
@@ -109,8 +121,6 @@ public class PatientGenerator implements Generator<Patient> {
             p = patientMap.get(id);
             if (p != null) {
                 break;
-            } else {
-                System.out.println("Got here");
             }
         }
 
@@ -250,7 +260,7 @@ public class PatientGenerator implements Generator<Patient> {
 
     private void getCovidEncounterData() {
         String map[] = CsvResourceLoader.getMap("Encounter");
-        int counter[] = new int[2];
+        int counter[] = new int[3];
         System.out.println();
         CsvResourceLoader.createResources(
             Encounter.class, DATA_URL + "encounters.csv", map,
@@ -314,24 +324,20 @@ public class PatientGenerator implements Generator<Patient> {
                 }
 
                 return true;
-            }, "PATIENT", p -> patientMap.containsKey(p), 0);
+            }, "PATIENT", p -> { counter[2]++; return patientMap.containsKey(p); } , 0);
         /* vent_ids = procedures[procedures.CODE == 26763009].PATIENT
          * cp['ventilated'] = cp.Id.isin(vent_ids)
          */
 
-        List<String> idsToRemove = new ArrayList<>();
+        List<String> idsToRemove = patientMap.values().stream()
+            .filter(p -> p.getUserData("age") == null)
+            .map(p -> p.getIdElement().getIdPart()).collect(Collectors.toList());
 
-        for (Patient p: patientMap.values()) {
-            if (p.getUserData("age") == null) {
-                idsToRemove.add(p.getIdElement().getIdPart());
-            }
-        }
         int total = patientMap.size();
-        for (String key: idsToRemove) {
-            patientMap.remove(key);
-        }
-        System.out.printf("\nInitial Patients: %d\nPatients without Hospital Encounters: %d\nTotal Hospitalized: %d\n",
-            total, idsToRemove.size(), patientMap.size());
+        idsToRemove.forEach(key -> patientMap.remove(key));
+        System.out.printf("\nInitial Patients: %d\nPatients without Hospital Encounters: %d\nTotal Hospitalized: %d\nTotal Encounters: %d\n",
+            total, idsToRemove.size(), patientMap.size(), counter[2]);
+        reset();
     }
 
     private boolean overlaps(Period period, Period period2) {
@@ -356,6 +362,7 @@ public class PatientGenerator implements Generator<Patient> {
 
     @Override
     public void reset() {
+        patients.clear();
         patients.addAll(patientMap.keySet());
     }
 }

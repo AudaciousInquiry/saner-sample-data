@@ -3,6 +3,8 @@ package com.ainq.fhir.saner.simulator;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.ainq.fhir.saner.sampledata.Generator;
+
 class Assigner {
     List<Prevalence<?>> category;
 
@@ -64,7 +66,7 @@ class Assigner {
      */
     boolean assign(Case c, Runnable setter) {
         // Compute a uniform random variable between 0 and 1.
-        double variable = Math.random();
+        double variable = Generator.RANDOM.nextDouble();
         for (Prevalence<?> cat: category) {
             if (!cat.test(c)) {
                 return false;

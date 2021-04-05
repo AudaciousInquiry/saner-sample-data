@@ -2,6 +2,7 @@ package com.ainq.fhir.saner.simulator;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -82,6 +83,10 @@ public class CaseSimulator {
 
     /** Date Formatter for date comparison */
     final static SimpleDateFormat SDF = new SimpleDateFormat("yyyyMMdd");
+    private static final File DATA_FOLDER = new File(".", "hospitalData");
+    private static PrintWriter OUT = null;
+
+    private static final Set<String> patients = new HashSet<>();
 
     /** The starting and ending counts for cases */
     private int startingCases = 3992,
@@ -93,7 +98,7 @@ public class CaseSimulator {
     /** Used to find data fields of a given type in resources */
     private FhirTerser terser = new FhirTerser(FhirContext.forR4());
     /** For serializing the output data */
-    private IParser xp = FhirContext.forR4().newXmlParser().setPrettyPrint(false);
+    private IParser parser = FhirContext.forR4().newJsonParser().setPrettyPrint(false);
 
 
     /**
@@ -263,7 +268,16 @@ public class CaseSimulator {
             // Then determine number to create.
             int numCasesToCreate = (h.getHospitalBeds() * total) / totalBeds;
             for (int i = 0; i < numCasesToCreate; i++) {
+                if (patients.size() == 3980) {
+                    LOGGER.info("Got here!");
+                }
                 Case c = new Case(day, isInitial);
+                if ("21a35eab-cafe-49df-917d-5ceee14f223b".equals(c.getPatientId())) {
+                    LOGGER.info("Got here: {}", parser.encodeResourceToString(c.getPatient()));
+                }
+                if (!patients.add(c.getPatientId())) {
+                    LOGGER.warn("Duplicate Patient Added");
+                }
                 cal.setTime(day);
                 h.addCase(c);
             }
@@ -372,6 +386,13 @@ public class CaseSimulator {
             System.out.println("Usage: CaseSimulator startDate stopDate startingCaseCount endingCaseCount");
             System.exit(1);
         }
+        // Clean out an existing, or create a new storage location.
+        if (DATA_FOLDER.exists()) {
+            FileUtils.cleanDirectory(DATA_FOLDER);
+        } else {
+            DATA_FOLDER.mkdirs();
+        }
+        OUT = new PrintWriter(new File(DATA_FOLDER, "report.txt"));
 
         // Create and initialize data generators
         LocationGenerator l = new LocationGenerator();
@@ -395,7 +416,7 @@ public class CaseSimulator {
             sim.processActivity(day.getTime());
             sim.report(day.getTime());
         }
-        sim.collectAndWriteClinicalData(new File(".", "hospitalData"));
+        sim.collectAndWriteClinicalData(DATA_FOLDER);
     }
 
     /**
@@ -407,14 +428,8 @@ public class CaseSimulator {
 
         Set<String> allPatients = new HashSet<>();
 
-        // Clean out an existing, or create a new storage location.
-        if (storageLocation.exists()) {
-            FileUtils.cleanDirectory(storageLocation);
-        } else {
-            storageLocation.mkdirs();
-        }
-
         // For each hospital
+        int totalPatients = 0;
         for (Hospital h: hospitals) {
             // Create a folder for the cases for a given hospital location
             File hDir = new File(storageLocation, h.getLocation().getIdElement().getIdPart());
@@ -422,13 +437,16 @@ public class CaseSimulator {
                 hDir.mkdirs();
             }
 
-            // For all cases the occurred at the hospital
+            // For all cases that occurred at the hospital
             for (Case c: h.getAllCases()) {
                 // Get the matching patient
-                Patient p = getPatientGenerator().generate(Collections.singletonMap("id", c.getPatientId()));
+                String patientId = c.getPatient().getIdElement().getIdPart();
+                allPatients.add(patientId);
+                Patient p = c.getPatient();
+                //getPatientGenerator().generate(Collections.singletonMap("id", c.getPatientId()));
 
                 // Set the file location for the data for this patient.
-                File destination = new File(hDir, c.getPatient().getIdElement().getIdPart() + ".ndjson");
+                File destination = new File(hDir, patientId + ".ndjson");
                 p.setUserData("file", destination);
 
                 // Select an address for the patient appropriate to the location
@@ -437,7 +455,10 @@ public class CaseSimulator {
                 // Write the patient record to the file
                 writeData(p, p);
             }
+            printf("%-64s%6d\n", h.getName(), h.getAllCases().size());
+            totalPatients += h.getAllCases().size();
         }
+        printf("%-64s%6d %6d\n", "Total", allPatients.size(), totalPatients);
 
         // Collect and store additional clinical data for each patient.
         storeResourcesForPatients(Encounter.class, "encounters.csv", allPatients);
@@ -473,8 +494,9 @@ public class CaseSimulator {
      * @param patients  The patients for whom data should be stored.
      */
     private <T extends Resource> void storeResourcesForPatients(Class<T> type, String file, Set<String> patients) {
-        int count[] = new int[1];
-        System.out.printf("Reading %s Resources\n", type.getSimpleName());
+        int count[] = new int[2];
+        printf("Reading %s Resources\n", type.getSimpleName());
+        Set<String> foundPatients = new HashSet<String>();
         CsvResourceLoader.createResources(
             type, PatientGenerator.DATA_URL + file, CsvResourceLoader.getMap(type.getSimpleName()),
             r -> {
@@ -485,17 +507,25 @@ public class CaseSimulator {
                     if (patient != null) {
                         try {
                             writeData(patient, r);
+                            foundPatients.add(pat.getReferenceElement().getIdPart());
                         } catch (DataFormatException | IOException e) {
                             LOGGER.error("Unexcpected exception writing resource {}", r.getId(), e);
                         }
                         updateCountAndStatus(count, scale);
+                    } else {
+                        LOGGER.error("Could not find {}", pat);
                     }
+                } else {
+                    LOGGER.error("No Patient Reference in {}", r.getId());
                 }
                 return true;
             }, "PATIENT", p -> {
+                count[1]++;
                 return patients.contains(p);
             }, 0);
-        System.out.println();
+        println();
+        printf("Selected/Total %s records: %d/%d\n", type.getSimpleName(), count[0], count[1]);
+        printf("Selected/Total patients: %d/%d\n", foundPatients.size(), patients.size());
     }
 
     /**
@@ -525,9 +555,9 @@ public class CaseSimulator {
      */
     private static void updateCountAndStatus(int[] count, int scale) {
         if ((++count[0]) % scale == 0) {
-            System.out.print(".");
+            printf(".");
             if (count[0]/scale % 100 == 0) {
-                System.out.println();
+                println();
             }
         }
     }
@@ -583,7 +613,7 @@ public class CaseSimulator {
             cal.add(Calendar.DATE, dateOffset);
             t.setValue(cal.getTime());
         }
-        FileUtils.writeStringToFile(f, xp.encodeResourceToString(r) + "\n", StandardCharsets.UTF_8, true);
+        FileUtils.writeStringToFile(f, parser.encodeResourceToString(r) + "\n", StandardCharsets.UTF_8, true);
     }
 
     /**
@@ -619,9 +649,18 @@ public class CaseSimulator {
     private void report(Date day) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String reportDate = sdf.format(day);
-        System.out.printf("--------%s---------\n", reportDate);
+        printf("--------%s---------\n", reportDate);
         for (Hospital h: hospitals) {
-            System.out.printf("%s\t%s\t%d\t%d\n", reportDate, h.getName(), h.getHospitalBedsUsed(), h.getIcuBedsUsed(day));
+            printf("%s\t%s\t%d\t%d\n", reportDate, h.getName(), h.getHospitalBedsUsed(), h.getIcuBedsUsed(day));
         }
+    }
+
+    private static void println() {
+        System.out.println();
+        OUT.println();
+    }
+    private static void printf(String fmt, Object ... args) {
+        System.out.printf(fmt, args);
+        OUT.printf(fmt, args);
     }
 }

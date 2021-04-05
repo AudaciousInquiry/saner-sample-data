@@ -33,7 +33,7 @@ public class Loader {
     private static final AddressGenerator addressGenerator = new AddressGenerator();
     private static final LocationGenerator  locationGenerator = new LocationGenerator();
     /**
-     * Create Location and Organization resources from Hospital-Locations.xml
+     * Create Location and Organization resources
      */
     public static void createLocationsAndOrganizations() {
         List<Location> l = new ArrayList<>(locationGenerator.getAll());

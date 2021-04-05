@@ -411,7 +411,7 @@ public class CsvResourceLoader {
         case "mapEncounter":
             return "Encounter/" + value;
         case "mapProvider":
-            return "mapPracitioner/" + value;
+            return "Practitioner/" + value;
         case "genId":
             return UUID.randomUUID().toString();
         case "mapString":

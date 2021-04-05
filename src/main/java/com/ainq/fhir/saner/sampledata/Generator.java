@@ -12,7 +12,7 @@ public interface Generator<B extends Base> {
     /**
      * A source of random information that can be used by all generators.
      */
-    public static final Random RANDOM = new Random();
+    public static final Random RANDOM = new Random(0x53414E5221l);
     /**
      * Initialize the generator.
      */
